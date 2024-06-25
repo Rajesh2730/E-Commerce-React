@@ -2,14 +2,17 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavScrollExample from './components/Nav/NavBar';
+import NavBar from '../Nav/NavBar';
+import Slider from '../Sliders/Sliders';
+
 function App() {
   return (
     <BrowserRouter>
+    <NavBar/>
       <Routes>
         <Route path='/' element={<App/>}/>
       </Routes>
-      <NavScrollExample/>
+      <Slider/>
     </BrowserRouter>
   );
 }

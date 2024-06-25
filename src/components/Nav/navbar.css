@@ -1,0 +1,12 @@
+.bd-name{
+    font-size: larger;
+    color: white;
+    font-weight: 700;
+}
+.search{
+    margin-right: 10px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
