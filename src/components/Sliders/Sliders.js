@@ -1,12 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
+import slide1 from '../../Assets/Slide-1_1.jpg'
+import slide2 from '../../Assets/Slide-1_1.jpg'
 
 function Slider() {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=f5f5f5"
+          className="slides "
+          src={slide1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,8 +18,8 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          className="slides"
+          src={slide1}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -27,8 +29,8 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          className="slides"
+          src={slide2}
           alt="Third slide"
         />
         <Carousel.Caption>
