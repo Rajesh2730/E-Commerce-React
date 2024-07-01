@@ -25,7 +25,7 @@ function NavBar() {
               Outfits
             </Nav.Link>
             <NavDropdown title="Accounts" className='text-light fs-6 me-5' id="navbarScrollingDropdown">
-              <NavDropdown.Item><Link to='/logup' className='link'>Sign-up</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to='/signup' className='link'>Sign-up</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Sign-In
               </NavDropdown.Item>
