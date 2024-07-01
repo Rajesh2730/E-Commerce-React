@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './navbar.css'
-
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -25,7 +25,7 @@ function NavBar() {
               Outfits
             </Nav.Link>
             <NavDropdown title="Accounts" className='text-light fs-6 me-5' id="navbarScrollingDropdown">
-              <NavDropdown.Item href='/signup'>Sign-up</NavDropdown.Item>
+              <NavDropdown.Item><Link to='/signup' className='link'>Sign-up</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Sign-In
               </NavDropdown.Item>
