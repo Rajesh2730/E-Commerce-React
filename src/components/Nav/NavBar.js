@@ -19,7 +19,7 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/" className='text-light  fs-6 me-3'>Home</Nav.Link>
+            <Nav.Link href="/E-Commerce-React" className='text-light  fs-6 me-3'>Home</Nav.Link>
             <Nav.Link href="#action2" className='text-light  fs-6 me-3'>Trending</Nav.Link>
             <Nav.Link href="#" className='text-light  fs-6 me-3'>
               Outfits
