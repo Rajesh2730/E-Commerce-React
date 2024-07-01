@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-warning">
+    <Navbar expand="lg" className="navbar">
       <Container fluid>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Brand href="#" className='bd-name'>Trending Mart</Navbar.Brand>
@@ -19,12 +19,12 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/E-Commerce-React" className='text-dark  fs-6 me-3'>Home</Nav.Link>
-            <Nav.Link href="#action2" className='text-dark  fs-6 me-3'>Trending</Nav.Link>
-            <Nav.Link href="#" className='text-dark  fs-6 me-3'>
+            <Nav.Link href="/E-Commerce-React" className='text-light  fs-6 me-3'>Home</Nav.Link>
+            <Nav.Link href="#action2" className='text-light  fs-6 me-3'>Trending</Nav.Link>
+            <Nav.Link href="#" className='text-light  fs-6 me-3'>
               Outfits
             </Nav.Link>
-            <NavDropdown title="Accounts" className='text-dark fs-6 me-5' id="navbarScrollingDropdown">
+            <NavDropdown title="Accounts" className='text-light fs-6 me-5' id="navbarScrollingDropdown">
               <NavDropdown.Item><Link to='/logup' className='link'>Sign-up</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Sign-In
