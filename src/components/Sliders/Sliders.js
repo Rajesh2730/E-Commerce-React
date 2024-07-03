@@ -4,7 +4,7 @@ import slide2 from '../../Assets/Slide-1_1.jpg'
 
 function Slider() {
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="light">
       <Carousel.Item>
         <img
           className="slides "
@@ -12,7 +12,7 @@ function Slider() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
+          <h5>Offer Closes Soon</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
