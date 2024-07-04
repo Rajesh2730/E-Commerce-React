@@ -13,7 +13,7 @@ function NavBar() {
       <Container fluid>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Brand href="#" className='bd-name'>Trending Mart</Navbar.Brand>
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" style={{ maxHeight:"20rem", padding:"1rem" }}>
           <Nav
             className="me-5 my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
