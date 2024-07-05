@@ -11,7 +11,10 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" style={{
+          zIndex:"3",
+          minHeight:"50px"
+        }}/>
         <Navbar.Brand href="#" className='bd-name'>Trending Mart</Navbar.Brand>
         <Navbar.Collapse id="navbarScroll" style={{ maxHeight:"20rem", padding:"1rem" }}>
           <Nav
@@ -19,12 +22,12 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/E-Commerce-React" className='text-light  fs-6 me-3'>Home</Nav.Link>
-            <Nav.Link href="#action2" className='text-light  fs-6 me-3'>Trending</Nav.Link>
-            <Nav.Link href="#" className='text-light  fs-6 me-3'>
+            <Nav.Link href="/E-Commerce-React" className='text-dark  fs-6 me-3'>Home</Nav.Link>
+            <Nav.Link href="#action2" className='text-dark  fs-6 me-3'>Trending</Nav.Link>
+            <Nav.Link href="#" className='text-dark  fs-6 me-3'>
               Outfits
             </Nav.Link>
-            <NavDropdown title="Accounts" className='text-light fs-6 me-5' id="navbarScrollingDropdown">
+            <NavDropdown title="Accounts" className='text-dark fs-6 me-5' id="navbarScrollingDropdown">
               <NavDropdown.Item><Link to='/signup' className='link'>Sign-up</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Sign-In
