@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav,Form, FormControl, Button } from 'react-bootstrap';
 import '../Nav/navbar.css'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -12,7 +13,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/E-Commerce-React" className='text-light me-3'>Home</Nav.Link>
-            <Nav.Link href="/signup" className='text-light me-3'>Signup</Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/signup'style={{textDecoration:'none', color:"white"}} >Signup</Link></Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Signin</Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Profile</Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Men</Nav.Link>
