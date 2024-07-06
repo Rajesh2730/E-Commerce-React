@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../Nav/NavBar';
 import './signup.css';
+import { Form,InputGroup } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -47,6 +51,13 @@ const Signup = () => {
     }
   };
 
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+
   return (
     <div>
       <NavBar/>
@@ -54,7 +65,7 @@ const Signup = () => {
     <div className="container">
       <h2 className="my-4 row justify-content-center">Sign Up</h2>
       <form onSubmit={handleSubmit} noValidate>
-        <div className="mb-3 row justify-content-center">
+        <div className="row justify-content-center">
           <div className="col-md-6 col-lg-4">
             <label htmlFor="username" className="form-label">Username</label>
             <input
@@ -87,30 +98,38 @@ const Signup = () => {
         <div className="mb-3 row justify-content-center">
           <div className="col-md-6 col-lg-4">
             <label htmlFor="password" className="form-label">Password</label>
-            <input
-              type="password"
-              className={`form-control ${errors.password ? 'is-invalid' : ''}`}
-              id="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              autoComplete='off'
-            />
+            <InputGroup>
+                <Form.Control
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  id='password'
+                  name='password'
+                />
+            <InputGroup.Text onClick={togglePasswordVisibility} className="eye-icon">
+                  <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+                </InputGroup.Text>
+                </InputGroup>
             {errors.password && <div className="invalid-feedback">{errors.password}</div>}
           </div>
         </div>
         <div className="mb-5 row justify-content-center">
           <div className="col-md-6 col-lg-4">
             <label htmlFor="confirmPassword" className="form-label">Confirm Password</label>
-            <input
-              type="password"
-              className={`form-control ${errors.confirmPassword ? 'is-invalid' : ''}`}
-              id="confirmPassword"
-              name="confirmPassword"
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              autoComplete='off'
-            />
+            <InputGroup>
+                <Form.Control
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Confirm Password"
+                  value={formData.confirmPassword}
+                  onChange={handleChange}
+                  id='confirmPassword'
+                  name='confirmPassword'
+                />
+            <InputGroup.Text onClick={togglePasswordVisibility} className="eye-icon">
+                  <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+                </InputGroup.Text>
+                </InputGroup>
             {errors.confirmPassword && <div className="invalid-feedback">{errors.confirmPassword}</div>}
           </div>
         </div>

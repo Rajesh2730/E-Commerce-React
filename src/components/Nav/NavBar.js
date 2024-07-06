@@ -1,54 +1,34 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './navbar.css'
-import { Link } from 'react-router-dom';
+// App.js
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav,Form, FormControl, Button } from 'react-bootstrap';
+import '../Nav/navbar.css'
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="navbar">
-      <Container fluid>
-        <Navbar.Toggle aria-controls="navbarScroll" style={{
-          zIndex:"3",
-          minHeight:"50px"
-        }}/>
-        <Navbar.Brand href="#" className='bd-name'>Trending Mart</Navbar.Brand>
-        <Navbar.Collapse id="navbarScroll" style={{ maxHeight:"20rem", padding:"1rem" }}>
-          <Nav
-            className="me-5 my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/E-Commerce-React" className='text-dark  fs-6 me-3'>Home</Nav.Link>
-            <Nav.Link href="#action2" className='text-dark  fs-6 me-3'>Trending</Nav.Link>
-            <Nav.Link href="#" className='text-dark  fs-6 me-3'>
-              Outfits
-            </Nav.Link>
-            <NavDropdown title="Accounts" className='text-dark fs-6 me-5' id="navbarScrollingDropdown">
-              <NavDropdown.Item><Link to='/signup' className='link'>Sign-up</Link></NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Sign-In
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Profile
-              </NavDropdown.Item>
-            </NavDropdown>
+    <Navbar bg="dark" expand="lg" className='navbar' >
+        <Navbar.Brand href="/E-Commerce-React" className='text-light me-3'>Trending Mart</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='bg-light'/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/E-Commerce-React" className='text-light me-3'>Home</Nav.Link>
+            <Nav.Link href="/signup" className='text-light me-3'>Signup</Nav.Link>
+            <Nav.Link href="#" className='text-light me-3'>Signin</Nav.Link>
+            <Nav.Link href="#" className='text-light me-3'>Profile</Nav.Link>
+            <Nav.Link href="#" className='text-light me-3'>Men</Nav.Link>
+            <Nav.Link href="#" className='text-light me-3'>Women</Nav.Link>
+            <Nav.Link href="#" className='text-light me-3'>Kids</Nav.Link>
           </Nav>
-          <Form className="d-flex me-5">
-            <Form.Control
+          <Form className="d-flex">
+            <FormControl
               type="search"
               placeholder="Search"
-              className="search"
+              className="me-3"
               aria-label="Search"
             />
-            <Button variant="outline-success" className='btn-success text-light'>Search</Button>
-          </Form>
+            <Button variant="outline-success" className='text-light'>Search</Button>
+            </Form>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
   );
 }

@@ -1,16 +1,4 @@
-.bd-name{
-    font-size: larger;
-    color: white;
-    font-weight: 700;
-}
-.search{
-    margin-right: 10px;
-}
-.link{
-    text-decoration: none;
-    color: black;
-}
 .navbar{
-    height: 5rem;
-    background-color: blue;
+    position: sticky;
+    top: 1px;
 }
