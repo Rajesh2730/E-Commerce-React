@@ -14,8 +14,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="/E-Commerce-React" className='text-light me-3'>Home</Nav.Link>
             <Nav.Link className='text-light me-3'><Link to='/signup'style={{textDecoration:'none', color:"white"}} >Signup</Link></Nav.Link>
-            <Nav.Link href="#" className='text-light me-3'>Signin</Nav.Link>
-            <Nav.Link href="#" className='text-light me-3'>Profile</Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/LogIn'style={{textDecoration:'none', color:"white"}} >SignIn</Link></Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Men</Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Women</Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Kids</Nav.Link>

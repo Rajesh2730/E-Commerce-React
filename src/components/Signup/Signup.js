@@ -76,8 +76,8 @@ const Signup = () => {
               value={formData.username}
               onChange={handleChange}
               autoComplete='off'
+              required
             />
-            {errors.username && <div className="invalid-feedback">{errors.username}</div>}
           </div>
         </div>
         <div className="mb-3 row justify-content-center">
@@ -91,8 +91,8 @@ const Signup = () => {
               value={formData.email}
               onChange={handleChange}
               autoComplete='off'
+              required
             />
-            {errors.email && <div className="invalid-feedback">{errors.email}</div>}
           </div>
         </div>
         <div className="mb-3 row justify-content-center">
@@ -106,12 +106,12 @@ const Signup = () => {
                   onChange={handleChange}
                   id='password'
                   name='password'
+                  required
                 />
             <InputGroup.Text onClick={togglePasswordVisibility} className="eye-icon">
                   <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                 </InputGroup.Text>
                 </InputGroup>
-            {errors.password && <div className="invalid-feedback">{errors.password}</div>}
           </div>
         </div>
         <div className="mb-5 row justify-content-center">
@@ -125,12 +125,12 @@ const Signup = () => {
                   onChange={handleChange}
                   id='confirmPassword'
                   name='confirmPassword'
+                  required
                 />
             <InputGroup.Text onClick={togglePasswordVisibility} className="eye-icon">
                   <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                 </InputGroup.Text>
                 </InputGroup>
-            {errors.confirmPassword && <div className="invalid-feedback">{errors.confirmPassword}</div>}
           </div>
         </div>
         <div className="mb-3 row justify-content-center">
