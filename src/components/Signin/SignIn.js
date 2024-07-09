@@ -3,7 +3,7 @@ import { Form, Button, Row, Col, InputGroup } from 'react-bootstrap';
 import FloatingLabel from 'react-bootstrap-floating-label';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import '../Signin/signin.css'
+import './signin.css'
 import NavBar from '../Nav/NavBar';
 
 const SignIn = () => {

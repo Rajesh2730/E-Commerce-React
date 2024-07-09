@@ -13,10 +13,10 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/E-Commerce-React" className='text-light me-3'>Home</Nav.Link>
-            <Nav.Link className='text-light me-3'><Link to='/signup'style={{textDecoration:'none', color:"white"}} >Signup</Link></Nav.Link>
-            <Nav.Link className='text-light me-3'><Link to='/LogIn'style={{textDecoration:'none', color:"white"}} >SignIn</Link></Nav.Link>
-            <Nav.Link href="#" className='text-light me-3'>Men</Nav.Link>
-            <Nav.Link href="#" className='text-light me-3'>Women</Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/signup'className='link' >Signup</Link></Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/LogIn' className='link' >SignIn</Link></Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/Mens' className='link' >Men</Link></Nav.Link>
+            <Nav.Link className='text-light me-3'><Link to='/women' className='link' >Women</Link></Nav.Link>
             <Nav.Link href="#" className='text-light me-3'>Kids</Nav.Link>
           </Nav>
           <Form className="d-flex">
