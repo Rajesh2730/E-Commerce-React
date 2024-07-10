@@ -2,6 +2,8 @@ import React from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
 import './products.css'
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const products = [
   {
@@ -49,8 +51,27 @@ const products = [
   
 ];
 
-const MenProductsPage = () => {
+const MenProductsPage = ({  direction = 'right' }) => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const variants = {
+    hidden: { opacity: 0, x: direction === 'left' ? -100 : 100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      variants={variants}
+      transition={{ duration: 1 }}
+      style={{ marginBottom: '20px' }}
+    >
     <div className='container1'>
       <h3 className="text-left mb-2 mt-2"><Link to='/Mens' className='link-body'>Men's</Link></h3>
       <Row>
@@ -69,6 +90,7 @@ const MenProductsPage = () => {
         ))}
       </Row>
     </div>
+    </motion.div>
   );
 };
 

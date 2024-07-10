@@ -1,14 +1,16 @@
 import Carousel from 'react-bootstrap/Carousel';
-import slide from '../../Assets/Slide-1_1.jpg';
+import slide from '../../Assets/slider1_2.jpg';
+import './slide.css'
 
 function Sliders() {
   return (
-    <Carousel>
+    <Carousel className='slider'>
       <Carousel.Item>
         <img 
         text="First slide" 
         src={slide}
         alt='First slide'
+        className='slider-image'
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -16,6 +18,7 @@ function Sliders() {
         text="First slide" 
         src={slide}
         alt='First slide'
+        className='slider-image'
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -23,6 +26,7 @@ function Sliders() {
         text="First slide" 
         src={slide}
         alt='First slide'
+        className='slider-image'
         />
       </Carousel.Item>
     </Carousel>

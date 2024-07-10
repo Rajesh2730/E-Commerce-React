@@ -1,5 +1,8 @@
 .navbar{
     position: sticky;
-    top: 1px;
+    top: 0px;
     z-index: 3;
+}
+.toggel{
+    background-color: lightgrey;
 }

@@ -101,7 +101,6 @@ const Signup = () => {
             <InputGroup>
                 <Form.Control
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Password"
                   value={formData.password}
                   onChange={handleChange}
                   id='password'
@@ -120,7 +119,6 @@ const Signup = () => {
             <InputGroup>
                 <Form.Control
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Confirm Password"
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   id='confirmPassword'

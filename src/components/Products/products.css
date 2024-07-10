@@ -1,16 +1,26 @@
 .container1{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: darkblue;
+    margin-top: 1.5rem;
 }
 .pro-img{
     height: 15rem;
 }
 .link-body{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .card{
     height: 30rem;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: lightpink;
+    margin-top: 1.5rem;
 }
