@@ -70,7 +70,7 @@ const MenProductsPage = ({  direction = 'right' }) => {
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
       transition={{ duration: 1 }}
-      style={{ marginBottom: '20px' }}
+      style={{ marginTop: '20px', marginBottom:'20px'}}
     >
     <div className='container1'>
       <h3 className="text-left mb-2 mt-2"><Link to='/Mens' className='link-body'>Men's</Link></h3>

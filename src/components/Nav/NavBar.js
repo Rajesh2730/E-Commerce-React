@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav,Form, FormControl, Button } from 'react-bootstrap';
@@ -12,10 +11,10 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggel'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/E-Commerce-React" className='text-light me-3'>Home</Nav.Link>
-            <Nav.Link className='text-light me-3'><Link to='/signup'className='link' >Signup</Link></Nav.Link>
-            <Nav.Link className='text-light me-3'><Link to='/LogIn' className='link' >SignIn</Link></Nav.Link>
-            <Nav.Link className='text-light me-3'><Link to='/categories' className='link' >Categories</Link></Nav.Link>
+            <Nav.Link href="/E-Commerce-React" className='text-light ms-3'>Home</Nav.Link>
+            <Nav.Link className='text-light ms-3'><Link to='/signup'className='link' >Signup</Link></Nav.Link>
+            <Nav.Link className='text-light ms-3'><Link to='/LogIn' className='link' >SignIn</Link></Nav.Link>
+            <Nav.Link className='text-light ms-3'><Link to='/categories' className='link' >Categories</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl
