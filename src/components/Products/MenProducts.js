@@ -51,7 +51,7 @@ const products = [
   
 ];
 
-const MenProductsPage = ({  direction = 'right' }) => {
+const MenProductsPage = ({  direction = 'left' }) => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -69,7 +69,7 @@ const MenProductsPage = ({  direction = 'right' }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      transition={{ duration: 1 }}
+      transition={{ duration: .5 }}
       style={{ marginTop: '20px', marginBottom:'20px'}}
     >
     <div className='container1'>
@@ -79,11 +79,11 @@ const MenProductsPage = ({  direction = 'right' }) => {
           <Col key={product.id} md={4} lg={2} className="mb-4">
             <Card className='card'>
               <Card.Img variant="top" src={product.image} alt={product.name} className='pro-img' />
-              <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
+              <Card.Body className='p-cont'>
+                <Card.Title className='p-name'>{product.name}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>
-                <Card.Text><strong>&#8377;{product.price}</strong></Card.Text>
-                <Button variant="primary">Add to Cart</Button>
+                <Card.Text className='p-price'><strong>&#8377;{product.price}</strong></Card.Text>
+                <Button variant="primary" className='adc-btn'>Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>

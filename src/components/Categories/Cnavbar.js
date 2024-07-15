@@ -11,7 +11,8 @@ function Cnavbar() {
             Best collection @ Trending Mart with 25% Offer
         </marquee>
     <Navbar expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggel'/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='c-toggel'/>
+        <Navbar.Brand href="/categories" className='text-dark ms-3'>Categories</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           <Nav.Link className='text-light  ms-5'><Link to='/Mens'className='clink' >Men's</Link></Nav.Link>

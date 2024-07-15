@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
   return (
     <Navbar bg="dark" expand="lg" className='navbar' >
-        <Navbar.Brand href="/E-Commerce-React" className='text-light me-3'>Trending Mart</Navbar.Brand>
+        <Navbar.Brand href="/E-Commerce-React" className='text-light ms-4'>Trending Mart</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggel'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -23,7 +23,7 @@ function NavBar() {
               className="me-3"
               aria-label="Search"
             />
-            <Button variant="outline-success" className='text-light'>Search</Button>
+            <Button variant="outline-success" className='text-light me-3'>Search</Button>
             </Form>
         </Navbar.Collapse>
     </Navbar>

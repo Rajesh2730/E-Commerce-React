@@ -8,50 +8,50 @@ import { motion } from 'framer-motion';
 const products = [
   {
     id: 1,
-    name: 'White Trendy Shirt',
-    description: 'New Model Dress Party Wear Mens Fashion Shirts ',
-    price: '450.00',
-    image: 'https://5.imimg.com/data5/ANDROID/Default/2021/7/KA/NE/HL/133782081/product-jpeg.jpeg',
+    name: 'Kurtha',
+    description: 'New Model Dress Party Wear Kids [Boys]',
+    price: '1550.00',
+    image: 'https://i.pinimg.com/736x/08/9e/e3/089ee3df4b6868942e7eaa8edc9ae936.jpg',
   },
   {
     id: 2,
-    name: 'Party Wear',
-    description: 'Lymio Men Stylish | (Beach-Floral-Bsy)',
-    price: '700.00',
-    image: 'https://m.media-amazon.com/images/I/71EZZ1usYnL._AC_UY1100_.jpg',
+    name: 'Party Wear Gowns',
+    description: 'New Model Dress Party Wear Kids [Girls]',
+    price: '2700.00',
+    image: 'https://img.faballey.com/images/Product/IGS00501Z/d3.jpg',
   },
   {
     id: 3,
-    name: 'Dark Grey Formal ',
-    description: 'This is a short description of Product 3.',
-    price: '550.00',
-    image: 'https://rukminim2.flixcart.com/image/300/300/cms-rpd-img/2f49b0f0947c434c8a0edf48480d5f18_18d7dceb945_SHTFZFTGHH54YXQU1.jpeg?q=90',
+    name: 'Casual Outfit + Coat ',
+    description: 'Casual Outfit For Kids(Party-Wear) [Boys]',
+    price: '2550.00',
+    image: 'https://i.pinimg.com/originals/76/e0/65/76e0656f134e791e6d9c8f5979005948.jpg',
   },
   {
     id: 4,
-    name: 'Black Shirt',
-    description: 'Double pocket and Long sleeved solid slim fit ',
-    price: '650.00',
-    image: 'https://thesparkshop.in/wp-content/uploads/2022/10/new-spring-double-pocket-mens-fashion-shirt-brand-men-long-sleeved-solid-shirts-slim-fit-casual-men-shirt-social-extra-image-2.jpg',
+    name: 'Yellow Short Gown',
+    description: 'Cotton Short Gown For Kids [Girls]',
+    price: '1850.00',
+    image: 'https://img.tatacliq.com/images/i11/437Wx649H/MP000000017809205_437Wx649H_202306021800371.jpeg',
   },
   {
     id: 5,
-    name: 'Lycra Shirt',
-    description: ' THE HELL DRIVER PLAIN PREMIUM LYCRA SHIRTS',
-    price: '860.00',
-    image: 'https://www.jiomart.com/images/product/original/rv0ycsza1w/the-hell-driver-plain-premium-lycra-shirts-exclusive-premium-lycra-fabric-100-cotton-shirts-exclusive-winter-collection-heavy-wash-pure-cotton-blue-color-shirt-for-men-product-images-rv0ycsza1w-5-202209052130.jpg?im=Resize=(500,630)',
+    name: 'Party Wear',
+    description: 'Trending Party Wear Western Model [Boys]',
+    price: '3860.00',
+    image: 'https://staranddaisy.in/wp-content/uploads/2022/09/sndcat28922_boyspd.jpg',
   },
   {
     id: 6,
-    name: 'Printed Shirt',
-    description: 'Leaves Printed Mens Casual Shirt',
-    price: '1000.00',
-    image: 'https://i.pinimg.com/736x/8c/a8/fd/8ca8fdd6987409d3ecca6fffbe4f8b6c.jpg',
+    name: 'Traditional Gown',
+    description: 'Traditional Gown For Kids [Girls]',
+    price: '1890.00',
+    image: 'https://i.pinimg.com/736x/67/b8/df/67b8dfe76133d78fc8a90d2611a742d9.jpg',
   },
   
 ];
 
-const KidsProductsPage = ({  direction = 'right' }) => {
+const KidsProductsPage = ({  direction = 'left' }) => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -69,7 +69,7 @@ const KidsProductsPage = ({  direction = 'right' }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      transition={{ duration: 1 }}
+      transition={{ duration: .5 }}
       style={{ marginTop: '20px', marginBottom:'20px'}}
     >
     <div className='container3'>
@@ -79,11 +79,11 @@ const KidsProductsPage = ({  direction = 'right' }) => {
           <Col key={product.id} md={4} lg={2} className="mb-4">
             <Card className='card'>
               <Card.Img variant="top" src={product.image} alt={product.name} className='pro-img' />
-              <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
+              <Card.Body className='p-cont'>
+                <Card.Title className='p-name'>{product.name}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>
                 <Card.Text><strong>&#8377;{product.price}</strong></Card.Text>
-                <Button variant="primary">Add to Cart</Button>
+                <Button variant="primary" className='adc-btn'>Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
