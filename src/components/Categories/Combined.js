@@ -3,6 +3,7 @@ import Cnavbar from './Cnavbar'
 import MenProductsPage from '../Products/MenProducts'
 import WomenProducts from '../Products/WomensProducts'
 import NavBar from '../Nav/NavBar'
+import KidsProductsPage from '../Products/KidsProdcuts'
 
 const Combined = () => {
   return (
@@ -11,6 +12,7 @@ const Combined = () => {
         <Cnavbar/>
         <MenProductsPage/>
         <WomenProducts/>
+        <KidsProductsPage/>
     </div>
   )
 }

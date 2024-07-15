@@ -9,6 +9,7 @@ import FooterPage from '../Footer/Footer';
 import Combined from '../Categories/Combined';
 import JoinProducts from '../Products/JoinProducts';
 import JoinWproducts from '../Products/JoinWproducts';
+import JoinKproducts from '../Products/JoinKproducts';
 
 
 function App() { 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/LogIn' element={<SignIn/>}/>
         <Route path='/Mens' element={<JoinProducts/>}/>
         <Route path='/women' element={<JoinWproducts/>}/>
+        <Route path='/kids' element={<JoinKproducts/>}/>
         <Route path='/categories' element={<Combined/>}/>
       </Routes>
       <FooterPage/>

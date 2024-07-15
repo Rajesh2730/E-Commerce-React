@@ -16,7 +16,7 @@ function Cnavbar() {
           <Nav className="me-auto">
           <Nav.Link className='text-light  ms-5'><Link to='/Mens'className='clink' >Men's</Link></Nav.Link>
             <Nav.Link className='text-light ms-5'><Link to='/women'className='clink' >Women's</Link></Nav.Link>
-            <Nav.Link className='text-light ms-5'><Link to='/LogInjj' className='clink' >Kids</Link></Nav.Link>
+            <Nav.Link className='text-light ms-5'><Link to='/kids' className='clink' >Kids</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
