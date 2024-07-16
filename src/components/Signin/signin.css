@@ -14,3 +14,25 @@
     border-radius: 8px;
     backdrop-filter: blur(8px);
 }
+.eye-ico {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .eye-ico .svg-inline--fa {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding-top: 20%;
+    }
+  
+    .eye-ico .svg-inline--fa {
+      font-size: 0.875rem;
+    }
+  }
+  

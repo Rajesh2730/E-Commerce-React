@@ -16,7 +16,7 @@
     height: 30rem;
     box-shadow: 3px 3px 10px 1px grey;
     cursor: pointer;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
 }
 .card:hover{
     transform: scale(1.1);
