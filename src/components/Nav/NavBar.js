@@ -15,6 +15,7 @@ function NavBar() {
             <Nav.Link className='text-light ms-3'><Link to='/signup'className='link' >Signup</Link></Nav.Link>
             <Nav.Link className='text-light ms-3'><Link to='/LogIn' className='link' >SignIn</Link></Nav.Link>
             <Nav.Link className='text-light ms-3'><Link to='/categories' className='link' >Categories</Link></Nav.Link>
+            <Nav.Link className='text-light ms-3'><Link to='/profile' className='link' >Profile</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl

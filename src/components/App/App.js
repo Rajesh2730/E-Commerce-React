@@ -10,6 +10,8 @@ import Combined from '../Categories/Combined';
 import JoinProducts from '../Products/JoinProducts';
 import JoinWproducts from '../Products/JoinWproducts';
 import JoinKproducts from '../Products/JoinKproducts';
+// import ProfilePage from '../Profile/ProfilePage';
+import DisplayProfile from '../Profile/DisplayProfile';
 
 
 function App() { 
@@ -23,6 +25,7 @@ function App() {
         <Route path='/women' element={<JoinWproducts/>}/>
         <Route path='/kids' element={<JoinKproducts/>}/>
         <Route path='/categories' element={<Combined/>}/>
+        <Route path='/profile' element={<DisplayProfile/>}/>
       </Routes>
       <FooterPage/>
     </div>
