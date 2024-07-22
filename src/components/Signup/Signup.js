@@ -20,6 +20,9 @@ const Signup = () => {
   const [errors, setErrors] = useState({});
   const [showPassword, setShowPassword] = useState(false);
 
+  const [message , setMessage] = useState("")
+  const [showmessage , setShowMessage] = useState(false)
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -50,11 +53,17 @@ const Signup = () => {
     if (Object.keys(validationErrors).length === 0) {
       try {
         const response = await axios.post('http://localhost:7230/signup', formData);
+        setMessage("Registration successful!"); // Set success message
+        setShowMessage(true); // Show the message box
+        setTimeout(() => setShowMessage(false), 3000)
         console.log('Form data submitted:', response.data);
-        navigate('/login')
-        alert("You Are Important To Us.Please LogIn To Explore Our Platform ;)")
+        navigate('/E-Commerce-React')
       } catch (error) {
         console.error('Error submitting form:', error);
+        setMessage("Registration failed. Please try again."); // Set error message
+        setShowMessage(true); // Show the message box
+        setTimeout(() => setShowMessage(false), 3000);
+
       }
     } else {
       setErrors(validationErrors);
