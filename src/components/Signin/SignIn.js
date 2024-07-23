@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
   const navigate = useNavigate()
+  const [msg , setMsg] = useState('')
   const [error , setErrors] = useState('')
   const [email, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -22,6 +23,10 @@ const SignIn = () => {
       }
       else{
         console.log("Invalid Username/Password");
+        setMsg("Invalid Username/Password")
+        setTimeout(() => {
+          setMsg('')
+        }, 3000);
       }
       
     } catch (error) {
@@ -37,6 +42,7 @@ const SignIn = () => {
         <Row className="w-100">
           <Col md={6} lg={4} className="mx-auto">
             <h3 className="text-center mb-4">Sign In</h3>
+            {msg && <p style={{margin:'1rem', color:'red', fontWeight:'bold'}}>{msg}</p>}
             <Form onSubmit={handleSubmit}  >
             <div className="form-group">
                   <label htmlFor="username" className='float-lb'>Username</label>
