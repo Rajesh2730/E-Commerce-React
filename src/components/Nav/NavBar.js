@@ -5,6 +5,7 @@ import '../Nav/navbar.css'
 import { Link } from 'react-router-dom';
 
 function NavBar() {
+  const UserName = localStorage.getItem('UserName');
   return (
     <Navbar bg="dark" expand="lg" className='navbar' >
         <Navbar.Brand href="/E-Commerce-React" className='text-light ms-4'>Trending Mart</Navbar.Brand>
@@ -15,7 +16,7 @@ function NavBar() {
             <Nav.Link className='text-light ms-3'><Link to='/signup'className='link' >Signup</Link></Nav.Link>
             <Nav.Link className='text-light ms-3'><Link to='/LogIn' className='link' >SignIn</Link></Nav.Link>
             <Nav.Link className='text-light ms-3'><Link to='/categories' className='link' >Categories</Link></Nav.Link>
-            <Nav.Link className='text-light ms-3'><Link to='/profile' className='link' >Profile</Link></Nav.Link>
+            <Nav.Link className='text-light ms-3'><Link to='/profile' className='link' >{UserName && <span className="student-name">{UserName}</span>}</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl

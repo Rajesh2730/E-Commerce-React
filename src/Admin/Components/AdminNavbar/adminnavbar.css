@@ -1,0 +1,10 @@
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    background-color: cadetblue;
+}
+.toggel{
+    background-color: lightgrey;
+    border: 0;
+}
