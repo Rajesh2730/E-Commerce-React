@@ -21,7 +21,7 @@ const ChangePassword = () => {
     }
 
     try {
-      const response = await axios.post('/api/change-password', {
+      const response = await axios.post('/adminChangepass', {
         currentPassword,
         newPassword,
       });
@@ -88,7 +88,7 @@ const ChangePassword = () => {
               />
             </Form.Group>
 
-            <Button variant="success" type="submit" className="w-100">
+            <Button variant="success" type="submit" className="w-100 mb-5">
               Change Password
             </Button>
           </Form>

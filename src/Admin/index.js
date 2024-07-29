@@ -15,10 +15,11 @@ const Adminindex = () => {
     e.preventDefault();
     alert("This Page Is Only Used For Pc Devices");
     try {
-      const response = await axios.post('http://localhost:7230/admin', { email, password });
+      const response = await axios.post('http://localhost:7230/adminLogin', { email, password });
       // console.log('Sign in successful:', response.status);
       if(response.status ===200){
         navigate("/AdminPannel")
+        localStorage.setItem('AdminUserName', response.data.AdminUserName);
         console.log("Data Recived!")
       }
       else{

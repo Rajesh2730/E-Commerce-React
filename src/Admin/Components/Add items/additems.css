@@ -1,0 +1,21 @@
+.additems{
+    position: relative;
+    left: 34rem;
+    top: -98%;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    width: 45rem;
+    height: 98vh;
+    text-align: center;
+}
+.lb-name{
+    color: white;
+    position: relative;
+    left: -8rem;
+    font-size: large;
+}
+.options{
+    width: 10rem;
+    border: 0;
+    border-radius: 6px;
+}

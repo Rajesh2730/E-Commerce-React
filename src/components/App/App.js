@@ -15,6 +15,7 @@ import DisplayProfile from '../Profile/DisplayProfile';
 import Adminindex from '../../Admin';
 import Merged from '../../Admin/Components/App/Merged';
 import ChangePassword from '../../Admin/Components/ChangePassword/Changepass';
+import AddItems from '../../Admin/Components/Add items/AddItems';
 
 
 function App() { 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/profile' element={<DisplayProfile/>}/>
         <Route path='/Admin' element={<Adminindex/>}/>
         <Route path='/AdminPannel' element={<Merged/>}/>
+        <Route path='/AddItems' element={<AddItems/>}/>
         <Route path='/changepassword' element={<ChangePassword/>}/>
       </Routes>
       <FooterPage/>

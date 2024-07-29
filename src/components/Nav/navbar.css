@@ -7,3 +7,11 @@
     background-color: lightgrey;
     border: 0;
 }
+.User-name{
+    background-color: blue;
+    display: block;
+    padding: .2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+}
