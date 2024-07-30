@@ -16,6 +16,7 @@ import Adminindex from '../../Admin';
 import Merged from '../../Admin/Components/App/Merged';
 import ChangePassword from '../../Admin/Components/ChangePassword/Changepass';
 import AddItems from '../../Admin/Components/Add items/AddItems';
+import ForgotPassword from '../ForgotPassword/ForgotPassword';
 
 
 function App() { 
@@ -33,6 +34,7 @@ function App() {
         <Route path='/Admin' element={<Adminindex/>}/>
         <Route path='/AdminPannel' element={<Merged/>}/>
         <Route path='/AddItems' element={<AddItems/>}/>
+        <Route path='/ForgotPassword' element={<ForgotPassword/>}/>
         <Route path='/changepassword' element={<ChangePassword/>}/>
       </Routes>
       <FooterPage/>

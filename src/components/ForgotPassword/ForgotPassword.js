@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
-import './changepass.css'
-import AdminNavbar from '../AdminNavbar/AdminNavbar'
+import './forgot.css'
+import NavBar from '../Nav/NavBar';
 
-const ChangePassword = () => {
-  const [currentPassword, setCurrentPassword] = useState('');
+const ForgotPassword = () => {
+  const [email, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -21,8 +21,8 @@ const ChangePassword = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:7230/adminChangepass', {
-        currentPassword,
+      const response = await axios.post('http://localhost:7230/Forgotpass', {
+        email,
         newPassword,
       });
 
@@ -43,9 +43,9 @@ const ChangePassword = () => {
   };
 
   return (
-    <div className='change-pass'>
-      <AdminNavbar/>
-    <div className='cp-container'>
+    <div className='changepass-bg'>
+        <NavBar/>
+    <div className='fp-container'>
       <Row className="justify-content-md-center">
         <Col xs={12} md={6}>
           <h2 className="mt-5 text-light mb-4">Change Password</h2>
@@ -56,10 +56,10 @@ const ChangePassword = () => {
           )}
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formCurrentPassword" className="mb-3">
-              <Form.Label className='text-light'>Current Password</Form.Label>
+              <Form.Label className='text-light'>Email ID</Form.Label>
               <Form.Control
-                type="password"
-                value={currentPassword}
+                type="email"
+                value={email}
                 className='mb-4'
                 onChange={(e) => setCurrentPassword(e.target.value)}
                 required
@@ -99,4 +99,4 @@ const ChangePassword = () => {
   );
 };
 
-export default ChangePassword;
+export default ForgotPassword;

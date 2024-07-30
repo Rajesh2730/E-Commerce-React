@@ -3,7 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import './signin.css';
 import NavBar from '../Nav/NavBar';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
   const navigate = useNavigate()
@@ -69,7 +69,7 @@ const SignIn = () => {
                     required
                   />
                 </div>
-
+                <Link to='/ForgotPassword'>Forgot Password?</Link>
               <Button variant="primary" type="submit" className="w-100 mt-3">
                 Submit
               </Button>

@@ -1,0 +1,12 @@
+.fp-container{
+    background: transparent;
+    backdrop-filter: blur(6px);
+    max-width: 45rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+.changepass-bg{
+    background-image: url("../../Assets/changepass-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
