@@ -63,7 +63,8 @@ const ProfilePage = () => {
                 <div className="col-md-4">
                     <div className="pro-card">
                         <div className="card-body">
-                            <h5 className="card-title mb-5">Profile Information</h5>
+                            <h5 className="card-title mb-4">Profile Information</h5>
+                            <div className='User-Profile'></div>
                             <p><strong>Name:</strong> {UserName && <span>{UserName}</span>}</p>
                             <p><strong>Email:</strong> {UserEmail && <span>{UserEmail}</span>} </p>
                             <p><strong>Joined:</strong> {JoinDate && <span>{JoinDate}</span>} </p>

@@ -27,3 +27,11 @@
     transition: .3s ease-out;
     height: fit-content;
 }
+.User-Profile{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-image: url("../../Assets/UserProfile.avif");
+    background-size: cover;
+    
+}
