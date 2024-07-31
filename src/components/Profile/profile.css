@@ -10,7 +10,8 @@
     margin-bottom: 1.5rem;
 }
 .pro-card:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
+    cursor: pointer;
 }
 .ord-card{
     border-radius: 6px;

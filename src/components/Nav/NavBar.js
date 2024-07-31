@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav,Form, FormControl, Button } from 'react-bootstrap';
 import '../Nav/navbar.css'
 import { Link } from 'react-router-dom';
-import Spinner from 'react-bootstrap/Spinner';
 
 function NavBar() {
   const UserName = localStorage.getItem('UserName');

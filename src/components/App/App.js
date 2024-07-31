@@ -10,7 +10,6 @@ import Combined from '../Categories/Combined';
 import JoinProducts from '../Products/JoinProducts';
 import JoinWproducts from '../Products/JoinWproducts';
 import JoinKproducts from '../Products/JoinKproducts';
-// import ProfilePage from '../Profile/ProfilePage';
 import DisplayProfile from '../Profile/DisplayProfile';
 import Adminindex from '../../Admin';
 import Merged from '../../Admin/Components/App/Merged';

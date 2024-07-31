@@ -20,6 +20,8 @@ const SignIn = () => {
       if(response.status ===200){
         navigate("/E-Commerce-React")
         localStorage.setItem('UserName', response.data.UserName);
+        localStorage.setItem('UserEmail', response.data.UserEmail);
+        localStorage.setItem('JoinDate', response.data.JD);
         console.log("Data Recived!")
       }
       else{
